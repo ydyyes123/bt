@@ -335,7 +335,7 @@ def getDiskUsed():
     import re
 
     disk_str = public.ExecShell("df -l --output=fstype,source,pcent,target")[0]
-    pass_type = ['ext', 'ext2', 'ext3', 'ext4', 'vfat', 'ntfs']
+    pass_type = ['ext', 'ext2', 'ext3', 'ext4', 'vfat', 'ntfs', 'xfs']
     disk_list=list()
 
     if disk_str is not None:
