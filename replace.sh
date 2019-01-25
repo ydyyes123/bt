@@ -1,0 +1,5 @@
+#!/bin/bash
+cp /www/server/panel/task.py /www/server/panel/task.py.bk
+\cp -fr ./www/server/panel/task.py /www/server/panel/
+\cp -fr ./www/server/panel/mail.json /www/server/panel/
+echo "执行结束!"
