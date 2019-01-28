@@ -323,7 +323,7 @@ def cheskMonitorAlarm(load_average, cpu_use_ratio, memory_use_ratio, network, di
                 # 5秒，正常后恢复
                 last_alarm_time=0
                 last_alarm_msg=None
-                sendMonitorAlarm(u"设备 " + device_id + u", 已经恢复正常.", "无事发生")
+                sendMonitorAlarm(u"设备 " + device_id + u", 已经恢复正常.", u"警报已经取消，设备恢复正常。")
         else:
             # 警报变动，必须间隔1小时
             if last_alarm_time < time.time() - 36000:
